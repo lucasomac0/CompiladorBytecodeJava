@@ -1,0 +1,56 @@
+<interactive>:4:17: error:
+    • Couldn't match expected type ‘(String -> Expr)
+                                    -> String -> ExprL’
+                  with actual type ‘ExprR’
+    • The function ‘Req’ is applied to four value arguments,
+        but its type ‘Expr -> Expr -> ExprR’ has only two
+      In the first argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
+      In the expression:
+        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
+
+<interactive>:4:21: error:
+    • Couldn't match expected type ‘Expr’
+                  with actual type ‘String -> Expr’
+    • Probable cause: ‘IdVar’ is applied to too few arguments
+      In the first argument of ‘Req’, namely ‘IdVar’
+      In the first argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
+      In the expression:
+        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
+
+<interactive>:4:27: error:
+    • Couldn't match type ‘[Char]’ with ‘Expr’
+      Expected: Expr
+        Actual: String
+    • In the second argument of ‘Req’, namely ‘"a"’
+      In the first argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
+      In the expression:
+        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
+
+<interactive>:4:43: error:
+    • Couldn't match expected type ‘(String -> Expr)
+                                    -> String -> ExprL’
+                  with actual type ‘ExprR’
+    • The function ‘Req’ is applied to four value arguments,
+        but its type ‘Expr -> Expr -> ExprR’ has only two
+      In the second argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
+      In the expression:
+        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
+
+<interactive>:4:47: error:
+    • Couldn't match expected type ‘Expr’
+                  with actual type ‘String -> Expr’
+    • Probable cause: ‘IdVar’ is applied to too few arguments
+      In the first argument of ‘Req’, namely ‘IdVar’
+      In the second argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
+      In the expression:
+        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
+
+<interactive>:4:53: error:
+    • Couldn't match type ‘[Char]’ with ‘Expr’
+      Expected: Expr
+        Actual: String
+    • In the second argument of ‘Req’, namely ‘"a"’
+      In the second argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
+      In the expression:
+        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
+
