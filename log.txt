@@ -1,56 +1,28 @@
-<interactive>:4:17: error:
-    • Couldn't match expected type ‘(String -> Expr)
-                                    -> String -> ExprL’
-                  with actual type ‘ExprR’
-    • The function ‘Req’ is applied to four value arguments,
-        but its type ‘Expr -> Expr -> ExprR’ has only two
-      In the first argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
-      In the expression:
-        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
+Semantico.hs:390:38: error:
+    Variable not in scope:
+      lookupFun :: TFun -> Id -> Result (t1 a1, b1)
+    |
+390 |     (tiposEsperados, tipoRetorno) <- lookupFun tfun id
+    |                                      ^^^^^^^^^
 
-<interactive>:4:21: error:
-    • Couldn't match expected type ‘Expr’
-                  with actual type ‘String -> Expr’
-    • Probable cause: ‘IdVar’ is applied to too few arguments
-      In the first argument of ‘Req’, namely ‘IdVar’
-      In the first argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
-      In the expression:
-        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
+Semantico.hs:399:27: error:
+    Variable not in scope:
+      verificarArgs :: TFun -> TLoc -> t1 a1 -> [Expr] -> Result [Expr]
+    |
+399 |         argsCorrigidos <- verificarArgs tfun tloc tiposEsperados args
+    |                           ^^^^^^^^^^^^^
 
-<interactive>:4:27: error:
-    • Couldn't match type ‘[Char]’ with ‘Expr’
-      Expected: Expr
-        Actual: String
-    • In the second argument of ‘Req’, namely ‘"a"’
-      In the first argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
-      In the expression:
-        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
+Semantico.hs:404:38: error:
+    Variable not in scope:
+      lookupFun :: TFun -> Id -> Result (t0 a0, b0)
+    |
+404 |     (tiposEsperados, tipoRetorno) <- lookupFun tfun id
+    |                                      ^^^^^^^^^
 
-<interactive>:4:43: error:
-    • Couldn't match expected type ‘(String -> Expr)
-                                    -> String -> ExprL’
-                  with actual type ‘ExprR’
-    • The function ‘Req’ is applied to four value arguments,
-        but its type ‘Expr -> Expr -> ExprR’ has only two
-      In the second argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
-      In the expression:
-        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
-
-<interactive>:4:47: error:
-    • Couldn't match expected type ‘Expr’
-                  with actual type ‘String -> Expr’
-    • Probable cause: ‘IdVar’ is applied to too few arguments
-      In the first argument of ‘Req’, namely ‘IdVar’
-      In the second argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
-      In the expression:
-        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
-
-<interactive>:4:53: error:
-    • Couldn't match type ‘[Char]’ with ‘Expr’
-      Expected: Expr
-        Actual: String
-    • In the second argument of ‘Req’, namely ‘"a"’
-      In the second argument of ‘And’, namely ‘(Req IdVar "a" IdVar "b")’
-      In the expression:
-        And (Req IdVar "a" IdVar "b") (Req IdVar "a" IdVar "b")
-
+Semantico.hs:413:27: error:
+    Variable not in scope:
+      verificarArgs :: TFun -> TLoc -> t0 a0 -> [Expr] -> Result [Expr]
+    |
+413 |         argsCorrigidos <- verificarArgs tfun tloc tiposEsperados args
+    |                           ^^^^^^^^^^^^^
+Failed, one module loaded.
