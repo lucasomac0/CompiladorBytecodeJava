@@ -17,10 +17,10 @@ Aqui já tem um arquivo teste.j--, se quiser testar com outros código recomendo
 Com tudo na mesma pasta, você vai precisar ter o Alex, o Happy instalados e o GHC (Glasgow Haskell Compiler). Procure como faz para instalá-los com o seu gerenciador de pacotes.
 
 Tendo tudo baixados, rode os seguintes comandos no terminal:
-'''bash
+```bash
 alex Lex.x
 happy Parser.y
 ghc Main.hs Semantico.hs Parser.hs Lex.hs AST.hs Token.hs -o compilador
 ./compilador
-'''
+```
 Com isso você será devidamente informado se funcionou ou não baseado nas mensagens de erro/sucesso que aparecem. Lembrando que: até agora só foi implementado até o analisador semântico, então só vai até a etapa de gerar a AST corrigida. Os bytecodes serão gerados na próxima etapa do trabalho.
