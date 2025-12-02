@@ -5,7 +5,6 @@ data Tipo = TDouble | TInt | TString | TVoid
  deriving (Show, Eq)
 
 data TCons = CDouble Double | CInt Int | CString String deriving Show
--- !!!! adicionei o CString String, se der zebra apaga
 
 data Expr = Add Expr Expr | Sub Expr Expr | Mul Expr Expr | Div Expr Expr |Neg Expr
  | Const TCons | IdVar String | Chamada Id [Expr] | Lit String
