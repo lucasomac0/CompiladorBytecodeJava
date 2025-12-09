@@ -11,7 +11,7 @@ int fat (int n)
 {
   int f;
   
-  f = 0;
+  f = 1;
   while (n > 0 && n < 10)
   { 
     f = f * n;
@@ -24,7 +24,7 @@ int somatorio (int n)
 {
    int i; 
    double s;
-   
+
    s = 0;
    return s;
 }   
@@ -40,11 +40,12 @@ void imprimir(string s, double r)
 {
   int x, num;
   double a;
-  
+
   print("Numero:");
   read (num);
-  x = fat (4.5);
+  x = fat (6.5);
   a = maior (2.5, 10);
-  imprimir("teste:", 1);
+  imprimir("teste:", 9);
+  print(x);
   return;
 }
