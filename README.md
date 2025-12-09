@@ -22,7 +22,7 @@ Tendo tudo baixados, rode os seguintes comandos no terminal:
 ```bash
 alex Lex.x
 happy Parser.y
-ghc Main.hs Semantico.hs Parser.hs Lex.hs AST.hs Token.hs -o compilador
+ghc Main.hs -o compilador
 ./compilador
 java -jar jasmin.jar Programa.j
 java Programa
